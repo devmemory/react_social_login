@@ -40,8 +40,8 @@ III. build 위치 및 개발 서버 셋팅
 # 8. public/index.html 생성
 
 # 9. [optional] import 경로 간소화
-9.1. module resolver 사용
-방법 : npm i --save-dev babel-plugin-module-resolver
-9.2. webpack - resolve - alias에 경로 지정
-9.3. babel plugin 설정
-9.4 jsconfig.json 파일 생성 후 baseUrl, inlcude 추가
+9.1. module resolver 사용  
+방법 : npm i --save-dev babel-plugin-module-resolver  
+9.2. webpack - resolve - alias에 경로 지정  
+9.3. babel plugin 설정  
+9.4 jsconfig.json 파일 생성 후 baseUrl, inlcude 추가  
