@@ -1,0 +1,24 @@
+/* 로그인 카드 부분 */
+.form_login {
+    flex-grow: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 상단 로고 */
+.form_login>img {
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (max-width: 650px) {
+    .form_login {
+        border-top-right-radius: none;
+        border-bottom-left-radius: 20px;
+    }
+}

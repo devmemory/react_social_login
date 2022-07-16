@@ -1,0 +1,14 @@
+.btn_submit {
+    width: 220px;
+    font-size: 1em;
+    color: white;
+    background-color: var(--point-color);
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 5px 5px var(--shadow-color);
+}
+
+.btn_submit:hover {
+    background-color: var(--point-hover-color);
+}
