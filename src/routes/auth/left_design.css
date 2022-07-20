@@ -1,4 +1,4 @@
-.div_right_design {
+.div_left_design {
     flex-grow: 4;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 650px) {
-    .div_right_design {
+    .div_left_design {
         font-size: 1.5em;
         width: 100%;
         min-height: 60px;
