@@ -1,7 +1,7 @@
 import React from 'react'
-import LeftDesign from '../left_design'
-import LoginForm from './login_form'
 import './index.css'
+import LeftDesign from 'components/common/left_design'
+import LoginForm from 'components/login/login_form'
 
 const LoginIndex = () => {
     return (

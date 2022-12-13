@@ -56,7 +56,7 @@ module.exports = {
     ],
     devServer: {
         host: 'localhost',
-        port: process.env.port,
+        port: process.env.port || 5555,
         open: true,
         historyApiFallback: true,
         hot: true

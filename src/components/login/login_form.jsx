@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import AuthBtn from '../auth_btn'
-import AuthInfoBtns from '../auth_info_btns'
-import AuthInput from '../auth_input'
-import SocialBtns from '../social_btns'
-import Logo from '../../../assets/logo.png'
+
+import Logo from 'assets/logo.png'
 import './login_form.css'
+import AuthInput from 'components/common/auth_input'
+import AuthBtn from 'components/common/auth_btn'
+import AuthInfoBtns from 'components/common/auth_info_btns'
+import SocialBtns from 'components/common/social_btns'
 
 const LoginForm = () => {
     const [authData, setAuthData] = useState({ id: "", pw: "" })

@@ -1,25 +1,20 @@
-import React from 'react'
-import LoginIndex from 'routes/auth/login'
+import React, { Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import routeUtil from 'util/route_util'
 import './app.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import NaverIndex from 'routes/auth/naver'
 
-function App() {
-    const routes = [
-        { path: '/', element: <LoginIndex /> },
-        { path: '/app/auth/naver', element: <NaverIndex /> },
-    ]
-
+const App = () => {
     return (
         <div className='div_main'>
-            <BrowserRouter>
-                <Routes>
-                    {routes.map((e) => <Route key={`path - ${e.path}`} path={e.path} element={e.element} />)}
-                </Routes>
-            </BrowserRouter>
-
+            <Suspense fallback={<div />}>
+                <BrowserRouter>
+                    <Routes>
+                        {routeUtil.map((e) => <Route key={`path - ${e.path}`} path={e.path} element={e.element} />)}
+                    </Routes>
+                </BrowserRouter>
+            </Suspense>
         </div>
     )
-}
+};
 
-export default App
+export default App;
